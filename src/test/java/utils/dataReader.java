@@ -11,7 +11,7 @@ private static Properties property;
 	
 	static {
 		try {
-			File file = new File("./src/test/resources/testData/testData.properties");
+			File file = new File("./src/test/resources/TestData/Properties.properties");
 			FileInputStream input = new FileInputStream(file);
 			property = new Properties();
 			property.load(input);

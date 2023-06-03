@@ -1,4 +1,4 @@
-@api
+
 Feature: Tests for Swagger pet store
 Description: Testing creating and retrieving pets
 

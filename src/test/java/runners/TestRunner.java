@@ -9,8 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		plugin = {"pretty", "html:/Reports/htmlReport.html", "json:/Reports/jsonReports.json"},
 		glue = "step_definitions",
-		features = "./src/test/resources/Features/SauceDemoLogins.feature",
-		tags = "@Login",
+		features = "./src/test/resources/Features/petStoreAPI.feature",
+		tags = "@api",
 		dryRun = false,
 		publish = true
 		)

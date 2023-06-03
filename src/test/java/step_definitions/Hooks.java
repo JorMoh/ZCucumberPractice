@@ -12,19 +12,19 @@ import utils.Driver;
 
 public class Hooks {
 	
-	@Before
-	public void setup() {
-		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Driver.getDriver().manage().window().maximize();
-	}
-
-	@After
-	public void teardown(Scenario scenario) {
-		if(scenario.isFailed()) {
-			final byte[] screenshot = ((TakesScreenshot)
-				Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-			scenario.attach(screenshot, "image/png", "screenshot");
-		}
-		Driver.quitDriver();
-	}
+//	@Before
+//	public void setup() {
+//		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//		Driver.getDriver().manage().window().maximize();
+//	}
+//
+//	@After
+//	public void teardown(Scenario scenario) {
+//		if(scenario.isFailed()) {
+//			final byte[] screenshot = ((TakesScreenshot)
+//				Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+//			scenario.attach(screenshot, "image/png", "screenshot");
+//		}
+//		Driver.quitDriver();
+//	}
 }
